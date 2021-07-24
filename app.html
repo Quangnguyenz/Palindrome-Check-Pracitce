@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project By Quang Nguyen</title>
+    <title>Taco Cat: A Coding Project By Quang Nguyen</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,7 +24,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="img/Wick Pick.png" height="35"
-                    class="d-inline-block align-text-top"> App Name</a>
+                    class="d-inline-block align-text-top"> Taco Cat</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,25 @@
     <!-- ==== Main Section === -->
     <main class="flex-shrink-0">
         <div class="container">
-
+            <div class="row">
+                <div class="col">
+                    <h1>TACO CAT: A Coding Project</h1>
+                    <p>The description of the program</p>
+                </div>
+                <div class="col">
+                    <h3 class="border-bottom border-2 border-primary">Enter a phrase</h3>
+                    <form>
+                        <input id="inputWord" type="text" class="form-control" placeholder="word">
+                        <button id="btnSubmit"type="button" class="btn btn-primary mt-2">
+                            Check
+                        </button>
+                    </form>
+                    <div class="alert alert-danger mt-5 fade show invisible" id="alert">
+                        <h4 id="alertHeader" class="alert-heading">Well Done</h4>
+                        <p class="mb-0" id="msg"></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <!-- ==== Footer Section === -->
@@ -84,6 +102,9 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="js/site.js"></script>
+    <script>
+        document.getElementById("btnSubmit").addEventListener("click", getValue);
+    </script>
 </body>
 
 </html>
